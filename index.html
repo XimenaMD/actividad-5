@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Menú de Navegación con Submenús</title>
+    <style>
+        /* Estilos para el menú principal */
+        .menu {
+            background-color: #5c2e2e;
+
+            padding: 10px;
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .menu li {
+            position: relative;
+            margin-right: 20px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        .menu a:hover {
+            background-color: #3f0d0d;
+        }
+
+        /* Estilos para los submenús */
+        .menu li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #b9b5b5;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu li:hover ul {
+            display: block;
+        }
+        .menu li ul li {
+            margin: 0;
+        }
+        .menu li ul a {
+            padding: 10px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="https://www.uv.mx">Inicio</a></li>
+            <li>
+                <a href="https://geekflare.com/es/best-cloud-gaming-services/">Servicios</a>
+                <ul>
+                    <li><a href="https://store.epicgames.com/es-MX/">Epicgames</a></li>
+                    <li><a href="https://store.steampowered.com/?l=spanish">Steam</a></li>
+                    <li><a href="https://www.ea.com/es-mx">EA</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.amazon.com.mx/s?k=agendas&adgrpid=1165482745937434&hvadid=72842916141810&hvbmt=be&hvdev=c&hvlocphy=177463&hvnetw=o&hvqmt=e&hvtargid=kwd-72843022906800%3Aloc-119&hydadcr=4092_13207994&tag=msndeskstdmx-20&ref=pd_sl_1b8d8z90nf_e">Portafolio</a></li>
+            <li><a href="https://lacuevagm.wordpress.com/?_gl=1*4r4mlk*_gcl_au*MjQxNzQ4Nzc0LjE3MzIyMDExNDE.">Contacto</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
